@@ -4,6 +4,12 @@ public class Evolucao {
     private String dataAvaliacao;
 
 
+    public Evolucao(float pesoAtual, float bioimpedancia, String dataAvaliacao) {
+        this.pesoAtual = pesoAtual;
+        this.bioimpedancia = bioimpedancia;
+        this.dataAvaliacao = dataAvaliacao;
+    }
+
     //constructor
     public Evolucao(){
 

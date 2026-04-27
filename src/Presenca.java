@@ -3,6 +3,13 @@ public class Presenca {
     private String hora;
     private String foto;
 
+    public Presenca(String data, String hora, String foto) {
+        this.data = data;
+        this.hora = hora;
+        this.foto = foto;
+    }
+
+
     //constructor
 
     public Presenca(){

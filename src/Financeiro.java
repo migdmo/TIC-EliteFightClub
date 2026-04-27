@@ -5,6 +5,14 @@ public class Financeiro {
     private float taxaExtra;
     private String dataPagamento;
 
+    public Financeiro(float valor, String valorDePlano, float desconto, float taxaExtra, String dataPagamento) {
+        this.valor = valor;
+        this.valorDePlano = valorDePlano;
+        this.desconto = desconto;
+        this.taxaExtra = taxaExtra;
+        this.dataPagamento = dataPagamento;
+    }
+
     //construtor
 
 

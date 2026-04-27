@@ -10,6 +10,10 @@ public class Notificacao {
 
     }
 
+    public Notificacao(String tipoNotificacao, String mensagem) {
+        this.tipoNotificacao = tipoNotificacao;
+        this.mensagem = mensagem;
+    }
 
     //Getters
 
