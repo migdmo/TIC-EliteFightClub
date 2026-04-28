@@ -10,6 +10,7 @@ public abstract class Pessoa {
         this.nome = nome;
     }
 
+    //Getters e Setters
     public String getCpf() {
         return cpf;
     }
@@ -26,7 +27,16 @@ public abstract class Pessoa {
         this.nome = nome;
     }
 
+    //Métodos abstratos
     public abstract void cadastrar();
     public abstract void atualizarDados();
     public abstract String exibirIdentificacao();
+
+    @Override
+    public String toString() {
+        return "Pessoa{" +
+                "cpf='" + cpf + '\'' +
+                ", nome='" + nome + '\'' +
+                '}';
+    }
 }
