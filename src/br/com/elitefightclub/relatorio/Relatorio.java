@@ -1,3 +1,5 @@
+package br.com.elitefightclub.relatorio;
+
 public class Relatorio {
     private String periodo;
     private String tipoRelatorio;
@@ -46,7 +48,7 @@ public class Relatorio {
 
     @Override
     public String toString() {
-        return "Relatorio{" +
+        return "br.com.elitefightclub.relatorio.Relatorio{" +
                 "periodo='" + periodo + '\'' +
                 ", tipoRelatorio='" + tipoRelatorio + '\'' +
                 '}';

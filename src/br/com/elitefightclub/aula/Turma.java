@@ -1,3 +1,8 @@
+package br.com.elitefightclub.aula;
+
+import br.com.elitefightclub.pessoa.Aluno;
+import br.com.elitefightclub.shared.Modalidade;
+
 import java.util.ArrayList;
 
 public class Turma {
@@ -50,7 +55,7 @@ public class Turma {
 
     @Override
     public String toString() {
-        return "Turma{" +
+        return "br.com.elitefightclub.aula.Turma{" +
                 "nome='" + nome + '\'' +
                 ", alunosInscritos=" + alunosInscritos +
                 ", aulas=" + aulas +

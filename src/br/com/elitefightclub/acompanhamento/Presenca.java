@@ -1,3 +1,5 @@
+package br.com.elitefightclub.acompanhamento;
+
 public class Presenca {
     private String data;
     private String hora;
@@ -62,7 +64,7 @@ public class Presenca {
 
     @Override
     public String toString() {
-        return "Presenca{" +
+        return "br.com.elitefightclub.acompanhamento.Presenca{" +
                 "data='" + data + '\'' +
                 ", hora='" + hora + '\'' +
                 ", foto='" + foto + '\'' +

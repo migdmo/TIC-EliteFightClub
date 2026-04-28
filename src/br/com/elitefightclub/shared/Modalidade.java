@@ -1,3 +1,7 @@
+package br.com.elitefightclub.shared;
+
+import br.com.elitefightclub.aula.Horario;
+
 import java.time.LocalTime;
 import java.util.ArrayList;
 
@@ -31,7 +35,7 @@ public class Modalidade {
 
     @Override
     public String toString() {
-        return "Modalidade{" +
+        return "br.com.elitefightclub.shared.Modalidade{" +
                 "nome='" + nome + '\'' +
                 ", horarios=" + horarios +
                 '}';

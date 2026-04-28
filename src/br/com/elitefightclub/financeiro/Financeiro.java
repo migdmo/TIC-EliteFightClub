@@ -1,3 +1,5 @@
+package br.com.elitefightclub.financeiro;
+
 public class Financeiro {
     private float valor;
     private String valorDePlano;
@@ -86,7 +88,7 @@ public class Financeiro {
     //toString
     @Override
     public String toString() {
-        return "Financeiro{" +
+        return "br.com.elitefightclub.financeiro.Financeiro{" +
                 "valor=" + valor +
                 ", valorDePlano='" + valorDePlano + '\'' +
                 ", desconto=" + desconto +

@@ -1,3 +1,5 @@
+package br.com.elitefightclub.pessoa;
+
 public abstract class Pessoa {
     protected String cpf, nome;
 
@@ -34,7 +36,7 @@ public abstract class Pessoa {
 
     @Override
     public String toString() {
-        return "Pessoa{" +
+        return "br.com.elitefightclub.pessoa.Pessoa{" +
                 "cpf='" + cpf + '\'' +
                 ", nome='" + nome + '\'' +
                 '}';

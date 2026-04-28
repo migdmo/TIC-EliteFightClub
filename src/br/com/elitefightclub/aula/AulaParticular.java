@@ -1,3 +1,8 @@
+package br.com.elitefightclub.aula;
+
+import br.com.elitefightclub.pessoa.Aluno;
+import br.com.elitefightclub.pessoa.Professor;
+
 public class AulaParticular {
     private Aluno aluno;
     private Professor professor;
@@ -75,7 +80,7 @@ public class AulaParticular {
     //toString----------------------------------------------
     @Override
     public String toString() {
-        return "AulaParticular{" +
+        return "br.com.elitefightclub.aula.AulaParticular{" +
                 "aluno=" + aluno +
                 ", professor=" + professor +
                 ", data='" + data + '\'' +

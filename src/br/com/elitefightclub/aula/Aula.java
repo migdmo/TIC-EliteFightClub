@@ -1,3 +1,8 @@
+package br.com.elitefightclub.aula;
+
+import br.com.elitefightclub.pessoa.Professor;
+import br.com.elitefightclub.shared.Modalidade;
+
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
@@ -83,7 +88,7 @@ public class Aula {
 
     @Override
     public String toString() {
-        return "Aula{" +
+        return "br.com.elitefightclub.aula.Aula{" +
                 "data=" + data +
                 ", horarioInicio=" + horarioInicio +
                 ", duracaoMinutos=" + duracaoMinutos +

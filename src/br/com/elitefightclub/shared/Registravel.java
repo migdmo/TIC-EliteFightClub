@@ -1,3 +1,5 @@
+package br.com.elitefightclub.shared;
+
 public interface Registravel {
 
     public void registrar();

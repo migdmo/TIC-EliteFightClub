@@ -1,3 +1,7 @@
+package br.com.elitefightclub.evento;
+
+import br.com.elitefightclub.pessoa.Aluno;
+
 import java.util.List;
 
 public class Campeonato {
@@ -82,7 +86,7 @@ public class Campeonato {
 
     }
 
-//    public void inscreverAluno(Aluno aluno,String peso){
+//    public void inscreverAluno(br.com.elitefightclub.pessoa.Aluno aluno,String peso){
 //
 //
 //    }
@@ -97,7 +101,7 @@ public class Campeonato {
 
     @Override
     public String toString() {
-        return "Campeonato{" +
+        return "br.com.elitefightclub.evento.Campeonato{" +
                 "nome='" + nome + '\'' +
                 ", data='" + data + '\'' +
                 ", locomocao='" + locomocao + '\'' +

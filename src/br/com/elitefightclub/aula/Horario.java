@@ -1,3 +1,5 @@
+package br.com.elitefightclub.aula;
+
 import java.time.LocalTime;
 
 public class Horario {
@@ -47,7 +49,7 @@ public class Horario {
 
     @Override
     public String toString() {
-        return "Horario{" +
+        return "br.com.elitefightclub.aula.Horario{" +
                 "diaSemana='" + diaSemana + '\'' +
                 ", horaInicio=" + horaInicio +
                 ", horaFim=" + horaFim +

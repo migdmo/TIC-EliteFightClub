@@ -1,7 +1,8 @@
-import java.util.ArrayList;
-import java.util.List;
+package br.com.elitefightclub.pessoa;
 
-public class Aluno extends Pessoa{
+import java.util.ArrayList;
+
+public class Aluno extends Pessoa {
 
     private int idade;
     private float peso;
@@ -120,7 +121,7 @@ public class Aluno extends Pessoa{
     }
     @Override
     public String toString() {
-        return "Aluno{" +
+        return "br.com.elitefightclub.pessoa.Aluno{" +
                 super.toString() +
                 "idade=" + idade +
                 ", peso=" + peso +

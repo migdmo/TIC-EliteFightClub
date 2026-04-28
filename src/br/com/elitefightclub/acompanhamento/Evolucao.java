@@ -1,3 +1,5 @@
+package br.com.elitefightclub.acompanhamento;
+
 public class Evolucao {
     private float pesoAtual;
     private float bioimpedancia;
@@ -59,7 +61,7 @@ public class Evolucao {
 
     @Override
     public String toString() {
-        return "Evolucao{" +
+        return "br.com.elitefightclub.acompanhamento.Evolucao{" +
                 "pesoAtual=" + pesoAtual +
                 ", bioimpedancia=" + bioimpedancia +
                 ", dataAvaliacao='" + dataAvaliacao + '\'' +

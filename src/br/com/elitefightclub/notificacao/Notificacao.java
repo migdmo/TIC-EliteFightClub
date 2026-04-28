@@ -1,3 +1,5 @@
+package br.com.elitefightclub.notificacao;
+
 public class Notificacao {
 
     private String tipoNotificacao;;
@@ -50,7 +52,7 @@ public class Notificacao {
 
     @Override
     public String toString() {
-        return "Notificacao{" +
+        return "br.com.elitefightclub.notificacao.Notificacao{" +
                 "tipoNotificacao='" + tipoNotificacao + '\'' +
                 ", mensagem='" + mensagem + '\'' +
                 '}';

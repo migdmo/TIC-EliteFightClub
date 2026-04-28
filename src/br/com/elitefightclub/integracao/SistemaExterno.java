@@ -1,3 +1,5 @@
+package br.com.elitefightclub.integracao;
+
 public class SistemaExterno {
     private String tipoSistema;
     private String dadosFinanceiros;
@@ -40,7 +42,7 @@ public class SistemaExterno {
 
     @Override
     public String toString() {
-        return "SistemaExterno{" +
+        return "br.com.elitefightclub.integracao.SistemaExterno{" +
                 "tipoSistema='" + tipoSistema + '\'' +
                 ", dadosFinanceiros='" + dadosFinanceiros + '\'' +
                 '}';

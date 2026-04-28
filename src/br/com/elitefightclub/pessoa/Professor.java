@@ -1,3 +1,5 @@
+package br.com.elitefightclub.pessoa;
+
 public class Professor extends Pessoa {
 
     private String especialidade, contato;
@@ -43,7 +45,7 @@ public class Professor extends Pessoa {
 
     @Override
     public String toString() {
-        return "Professor{" +
+        return "br.com.elitefightclub.pessoa.Professor{" +
                 super.toString() +
                 "especialidade='" + especialidade + '\'' +
                 ", contato='" + contato + '\'' +
