@@ -8,6 +8,7 @@ public class Campeonato {
     private String descricao;
     private List<String> pesosDeLuta;
 
+    private List<Aluno> alunosInscritos;
 
     //constructor----------------------------------
     public Campeonato(){
@@ -42,6 +43,9 @@ public class Campeonato {
         return pesosDeLuta;
     }
 
+    public List<Aluno> getAlunosInscritos(){
+        return alunosInscritos;
+    }
 
     //Setters---------------------------------------
 
@@ -78,11 +82,14 @@ public class Campeonato {
 
     }
 
-    public void inscreveraluno(Aluno aluno, String peso){
+//    public void inscreverAluno(Aluno aluno,String peso){
+//
+//
+//    }
 
-
+    public void inscreverAluno(Aluno aluno){
+        this.alunosInscritos.add(aluno);
     }
-
 
 
     //toString
@@ -97,6 +104,7 @@ public class Campeonato {
                 ", valores=" + valores +
                 ", descricao='" + descricao + '\'' +
                 ", pesosDeLuta=" + pesosDeLuta +
+                ", alunosInscritos" + alunosInscritos +
                 '}';
     }
 }
