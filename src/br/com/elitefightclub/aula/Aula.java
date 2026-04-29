@@ -5,7 +5,7 @@ import br.com.elitefightclub.shared.Modalidade;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
-import java.util.ArrayList;
+import java.util.List;
 
 public class Aula {
 
@@ -101,7 +101,7 @@ public class Aula {
     public void cadastrar(){}
     public void atualizarDados(){}
     // Retorna os horários da modalidade dessa aula
-    public ArrayList<Horario> getHorarios() {
+    public List<Horario> getHorarios() {
         return modalidade.getHorarios();
     }
 }

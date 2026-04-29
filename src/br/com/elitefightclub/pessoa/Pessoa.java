@@ -8,8 +8,8 @@ public abstract class Pessoa {
     }
 
     public Pessoa(String cpf, String nome) {
-        this.cpf = cpf;
-        this.nome = nome;
+        setNome(nome);
+        setCpf(cpf);
     }
 
     //Getters e Setters
@@ -18,6 +18,9 @@ public abstract class Pessoa {
     }
 
     public void setCpf(String cpf) {
+        if(cpf == null || cpf.isBlank()){
+            throw new IllegalArgumentException("Cpf não pode ser nulo ou vazio");
+        }
         this.cpf = cpf;
     }
 
@@ -26,6 +29,9 @@ public abstract class Pessoa {
     }
 
     public void setNome(String nome) {
+        if(nome == null || nome.isBlank()){
+            throw new IllegalArgumentException("Nome não pode ser nulo ou vazio");
+        }
         this.nome = nome;
     }
 

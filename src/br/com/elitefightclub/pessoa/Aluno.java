@@ -1,6 +1,13 @@
 package br.com.elitefightclub.pessoa;
 
+import br.com.elitefightclub.acompanhamento.Evolucao;
+import br.com.elitefightclub.acompanhamento.Presenca;
+import br.com.elitefightclub.aula.Turma;
+import br.com.elitefightclub.financeiro.Financeiro;
+import br.com.elitefightclub.notificacao.Notificacao;
+
 import java.util.ArrayList;
+import java.util.List;
 
 public class Aluno extends Pessoa {
 
@@ -13,23 +20,21 @@ public class Aluno extends Pessoa {
 
     //Associações Simples
     private Professor professor;
-    private ArrayList<Turma> turmas;
+    private List<Turma> turmas;
 
     //Composições
-    private ArrayList<Notificacao> notificacoes;
-    private ArrayList<Evolucao> evolucoes;
-    private ArrayList<Presenca> presencas;
-    private ArrayList<Financeiro> financeiros;
+    private List<Notificacao> notificacoes;
+    private List<Evolucao> evolucoes;
+    private List<Presenca> presencas;
+    private List<Financeiro> financeiros;
 
-    public Aluno(){
-
-    }
+    public Aluno(){}
 
     public Aluno(String cpf, String nome, int idade, float peso, float altura, float valorMensalidade, String graduacao, Professor professor, ArrayList<Turma> turmas){
         super(cpf, nome);
-        this.idade = idade;
-        this.peso = peso;
-        this.altura = altura;
+        setIdade(idade);
+        setPeso(peso);
+        setAltura(altura);
         this.valorMensalidade = valorMensalidade;
         this.graduacao = graduacao;
         this.professor = professor;
@@ -46,6 +51,10 @@ public class Aluno extends Pessoa {
     }
 
     public void setIdade(int idade) {
+
+        if(idade <= 0){
+            throw new IllegalArgumentException("Idade inválida");
+        }
         this.idade = idade;
     }
 
@@ -54,6 +63,9 @@ public class Aluno extends Pessoa {
     }
 
     public void setPeso(float peso) {
+        if(peso <= 0.0){
+            throw new IllegalArgumentException("Peso inválido");
+        }
         this.peso = peso;
     }
 
@@ -62,6 +74,9 @@ public class Aluno extends Pessoa {
     }
 
     public void setAltura(float altura) {
+        if(altura <= 0.0){
+            throw new IllegalArgumentException("Altura inválida");
+        }
         this.altura = altura;
     }
 
@@ -89,7 +104,7 @@ public class Aluno extends Pessoa {
         this.professor = professor;
     }
 
-    public ArrayList<Turma> getTurmas() {
+    public List<Turma> getTurmas() {
         return turmas;
     }
 
@@ -112,12 +127,13 @@ public class Aluno extends Pessoa {
 
     //Métodos sobrescritos da Super Classe
     @Override
-    public void cadastrar(){}
+    public void cadastrar(){System.out.println("Aluno cadastrado com sucesso!");}
     @Override
-    public void atualizarDados(){}
+    public void atualizarDados(){System.out.println("Dados do aluno atualizados com sucesso!");}
     @Override
     public String exibirIdentificacao(){
-        return "";
+        return "nome = " + this.nome +
+                "graduação = " + this.graduacao;
     }
     @Override
     public String toString() {

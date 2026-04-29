@@ -5,9 +5,7 @@ public class Professor extends Pessoa {
     private String especialidade, contato;
 
 
-    public Professor(){
-
-    }
+    public Professor(){}
 
     public Professor(String cpf, String nome, String especialidade, String contato){
         super(cpf, nome);

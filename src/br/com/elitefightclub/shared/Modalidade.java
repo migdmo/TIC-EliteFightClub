@@ -4,12 +4,13 @@ import br.com.elitefightclub.aula.Horario;
 
 import java.time.LocalTime;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Modalidade {
     private String nome;
 
     //Composição
-    private ArrayList<Horario> horarios;
+    private List<Horario> horarios;
 
     public Modalidade(String nome){
         this.nome = nome;
@@ -28,7 +29,7 @@ public class Modalidade {
         this.horarios.add(new Horario(diaSemana, horaInicio, horaFim, limiteAlunos));
     }
 
-    public ArrayList<Horario> getHorarios() {
+    public List<Horario> getHorarios() {
         return horarios;
     }
 
