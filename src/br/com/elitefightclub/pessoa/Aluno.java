@@ -35,7 +35,7 @@ public class Aluno extends Pessoa {
         setIdade(idade);
         setPeso(peso);
         setAltura(altura);
-        this.valorMensalidade = valorMensalidade;
+        setValorMensalidade(valorMensalidade);
         this.graduacao = graduacao;
         this.professor = professor;
         this.turmas = turmas;
@@ -85,6 +85,9 @@ public class Aluno extends Pessoa {
     }
 
     public void setValorMensalidade(float valorMensalidade) {
+        if(valorMensalidade <= 0.0){
+            throw new IllegalArgumentException("Mensalidade inválida");
+        }
         this.valorMensalidade = valorMensalidade;
     }
 

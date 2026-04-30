@@ -38,12 +38,13 @@ public class Professor extends Pessoa {
     public void atualizarDados(){}
     @Override
     public String exibirIdentificacao(){
-        return "";
+        return "nome = " + this.nome +
+                "\nespecialidade = " + this.especialidade;
     }
 
     @Override
     public String toString() {
-        return "br.com.elitefightclub.pessoa.Professor{" +
+        return "\nbr.com.elitefightclub.pessoa.Professor{" +
                 super.toString() +
                 "especialidade='" + especialidade + '\'' +
                 ", contato='" + contato + '\'' +
