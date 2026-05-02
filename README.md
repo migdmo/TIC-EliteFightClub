@@ -153,7 +153,7 @@ A arquitetura foi separada em responsabilidades, permitindo melhor organização
       <sub>Desenvolvimento</sub>
     </td>
     <td align="center">
-      <a href="https://github.com/isadorakairala">
+      <a href="https://github.com/Isadora-Kairala">
         <img src="https://github.com/Isadora-Kairala.png" width="100px;" alt="Isadora"/><br>
         <sub><b>Isadora Kairala</b></sub>
       </a>
@@ -161,7 +161,7 @@ A arquitetura foi separada em responsabilidades, permitindo melhor organização
       <sub>Desenvolvimento</sub>
     </td>
     <td align="center">
-      <a href="https://github.com/Júlia Guimarães">
+      <a href="https://github.com/Juliarezende521">
         <img src="https://github.com/Juliarezende521.png" width="100px;" alt="Integrante 3"/><br>
         <sub><b>Júlia Guimarães</b></sub>
       </a>
@@ -169,7 +169,7 @@ A arquitetura foi separada em responsabilidades, permitindo melhor organização
       <sub>Documentação</sub>
     </td>
     <td align="center">
-      <a href="https://github.com/Júlia Moreira">
+      <a href="https://github.com/moreiraju">
         <img src="https://github.com/moreiraju.png" width="100px;" alt="Integrante 4"/><br>
         <sub><b>Júlia Moreira</b></sub>
       </a>
