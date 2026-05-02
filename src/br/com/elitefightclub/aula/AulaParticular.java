@@ -2,8 +2,9 @@ package br.com.elitefightclub.aula;
 
 import br.com.elitefightclub.pessoa.Aluno;
 import br.com.elitefightclub.pessoa.Professor;
+import br.com.elitefightclub.shared.Registravel;
 
-public class AulaParticular {
+public class AulaParticular implements Registravel {
     private Aluno aluno;
     private Professor professor;
     private String data;
@@ -69,6 +70,7 @@ public class AulaParticular {
 
     }
 
+    @Override
     public void registrar(){
 
     }

@@ -1,6 +1,8 @@
 package br.com.elitefightclub.acompanhamento;
 
-public class Evolucao {
+import br.com.elitefightclub.shared.Registravel;
+
+public class Evolucao implements Registravel {
     private float pesoAtual;
     private float bioimpedancia;
     private String dataAvaliacao;
@@ -50,6 +52,7 @@ public class Evolucao {
 
     //Metodos
 
+    @Override
     public void registrar(){
 
     }

@@ -38,7 +38,7 @@ public class Relatorio {
     }
 
 
-    public void exportar(){
+    public void exportarExcel(){
 
 
     }

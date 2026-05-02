@@ -41,4 +41,5 @@ public class Modalidade {
                 ", horarios=" + horarios +
                 '}';
     }
+    public void cadastrar(){}
 }

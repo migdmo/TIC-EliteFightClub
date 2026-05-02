@@ -1,9 +1,13 @@
 package br.com.elitefightclub.acompanhamento;
 
-public class Presenca {
+import br.com.elitefightclub.aula.Aula;
+import br.com.elitefightclub.shared.Registravel;
+
+public class Presenca implements Registravel {
     private String data;
     private String hora;
     private String foto;
+    private Aula aula;
 
     public Presenca(String data, String hora, String foto) {
         this.data = data;
@@ -52,7 +56,7 @@ public class Presenca {
 
 
     //metodos
-
+    @Override
     public void registrar(){
 
 

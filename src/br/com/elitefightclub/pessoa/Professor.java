@@ -37,10 +37,7 @@ public class Professor extends Pessoa {
     @Override
     public void atualizarDados(){}
     @Override
-    public String exibirIdentificacao(){
-        return "nome = " + this.nome +
-                "\nespecialidade = " + this.especialidade;
-    }
+    public String exibirIdentificacao(){return "";}
 
     @Override
     public String toString() {

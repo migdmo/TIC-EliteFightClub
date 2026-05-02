@@ -2,14 +2,16 @@ package br.com.elitefightclub.pessoa;
 
 import br.com.elitefightclub.acompanhamento.Evolucao;
 import br.com.elitefightclub.acompanhamento.Presenca;
+import br.com.elitefightclub.aula.Aula;
 import br.com.elitefightclub.aula.Turma;
 import br.com.elitefightclub.financeiro.Financeiro;
 import br.com.elitefightclub.notificacao.Notificacao;
+import br.com.elitefightclub.shared.Registravel;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Aluno extends Pessoa {
+public class Aluno extends Pessoa implements Registravel {
 
     private int idade;
     private float peso;
@@ -96,6 +98,9 @@ public class Aluno extends Pessoa {
     }
 
     public void setGraduacao(String graduacao) {
+        if(graduacao == null || graduacao.isEmpty()){
+            throw new IllegalArgumentException("Graduação inválida");
+        }
         this.graduacao = graduacao;
     }
 
@@ -120,7 +125,7 @@ public class Aluno extends Pessoa {
     public void adicionarEvolucao(float pesoAtual, float bioImpedancia, String dataAvaliacao){
         this.evolucoes.add(new Evolucao(pesoAtual, bioImpedancia, dataAvaliacao));
     }
-    public void adicionarPresenca(String data, String hora, String foto){
+    public void adicionarPresenca(String data, String hora, String foto, Aula aula){
         this.presencas.add(new Presenca(data, hora, foto));
     }
     public void adicionarFinanceiro(float valor, String valorDePlano, float desconto, float taxaExtra, String dataPagamento){
@@ -130,14 +135,11 @@ public class Aluno extends Pessoa {
 
     //Métodos sobrescritos da Super Classe
     @Override
-    public void cadastrar(){System.out.println("Aluno cadastrado com sucesso!");}
+    public void cadastrar(){}
     @Override
-    public void atualizarDados(){System.out.println("Dados do aluno atualizados com sucesso!");}
+    public void atualizarDados(){}
     @Override
-    public String exibirIdentificacao(){
-        return "nome = " + this.nome +
-                "graduação = " + this.graduacao;
-    }
+    public String exibirIdentificacao(){return "";}
     @Override
     public String toString() {
         return "br.com.elitefightclub.pessoa.Aluno{" +
@@ -160,7 +162,11 @@ public class Aluno extends Pessoa {
     public Boolean registrarPresenca(){
         return false;
     }
+
     public void agendarAula(){}
     public void agendarAulaParticular(){}
+
+    @Override
+    public void registrar(){}
 
 }
