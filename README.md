@@ -1,5 +1,9 @@
 <div align="center">
 
+<p align="center">
+  <img src="gifLuta.gif" width="900px">
+</p>
+
 # 🥊 Elite Fight Club  
 ### *Sistema de Gerenciamento para Academia de Luta*  
 
