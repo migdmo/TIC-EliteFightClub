@@ -136,11 +136,49 @@ O sistema foi organizado de forma modular e orientada a domínio, buscando mante
 
 A arquitetura foi separada em responsabilidades, permitindo melhor organização das entidades e regras de negócio.
 
-```bash
-src/
- ┣ 📂 academia
- ┣ 📂 pessoa
- ┣ 📂 treino
- ┣ 📂 plano
- ┣ 📂 pagamento
- ┗ 📂 main
+---
+
+# 👥 Equipe de Desenvolvimento
+
+<div align="center">
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/migdmo">
+        <img src="https://github.com/migdmo.png" width="100px;" alt="Miguel"/><br>
+        <sub><b>Miguel Oliveira</b></sub>
+      </a>
+      <br />
+      <sub>Desenvolvimento</sub>
+    </td>
+    <td align="center">
+      <a href="https://github.com/isadorakairala">
+        <img src="https://github.com/Isadora-Kairala.png" width="100px;" alt="Isadora"/><br>
+        <sub><b>Isadora Kairala</b></sub>
+      </a>
+      <br />
+      <sub>Desenvolvimento</sub>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Júlia Guimarães">
+        <img src="https://github.com/Juliarezende521.png" width="100px;" alt="Integrante 3"/><br>
+        <sub><b>Júlia Guimarães</b></sub>
+      </a>
+      <br />
+      <sub>Documentação</sub>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Júlia Moreira">
+        <img src="https://github.com/moreiraju.png" width="100px;" alt="Integrante 4"/><br>
+        <sub><b>Júlia Moreira</b></sub>
+      </a>
+      <br />
+      <sub>Modelagem</sub>
+    </td>
+  </tr>
+</table>
+
+</div>
+
+
