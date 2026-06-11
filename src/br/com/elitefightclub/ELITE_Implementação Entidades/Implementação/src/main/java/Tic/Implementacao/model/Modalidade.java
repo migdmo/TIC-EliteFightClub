@@ -1,6 +1,9 @@
 package Tic.Implementacao.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+
+import java.util.List;
 
 @Entity
 @Table(name = "modalidades")
@@ -11,13 +14,17 @@ public class Modalidade {
     private Long id;
 
     @Column(nullable = false, length = 100)
-    private String nome; // Ex: Muay Thai, Jiu-Jitsu, Boxe, Treinamento Funcional
+    private String nome;
 
     @Column(length = 255)
     private String descricao;
 
     @Column(nullable = false)
     private boolean ativa = true;
+
+    @OneToMany(mappedBy = "modalidade")
+    @JsonIgnore
+    private List<Horario> horarios;
 
     public Modalidade() {}
 
@@ -59,5 +66,13 @@ public class Modalidade {
 
     public void setAtiva(boolean ativa) {
         this.ativa = ativa;
+    }
+
+    public List<Horario> getHorarios() {
+        return horarios;
+    }
+
+    public void setHorarios(List<Horario> horarios) {
+        this.horarios = horarios;
     }
 }
