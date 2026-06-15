@@ -1,6 +1,8 @@
 package Tic.Implementacao.model;
 
 import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 
 
 //LEMBRAR DO RELACIONAMENTO COM ALUNO!!!!
@@ -85,4 +87,14 @@ public class Financeiro {
     public void setDataPagamento(String dataPagamento) {
         this.dataPagamento = dataPagamento;
     }
+
+    public void registrarPagamento(){}
+    public void aplicarDesconto(Double desconto) {
+        this.desconto = desconto;
+    }
+    public float calcularMensalidadeAtual(){
+        return 0;
+    }
+
+
 }
