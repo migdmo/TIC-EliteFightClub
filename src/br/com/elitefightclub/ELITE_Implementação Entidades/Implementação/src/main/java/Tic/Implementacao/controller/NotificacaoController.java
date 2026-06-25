@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping
+@RequestMapping("/notificacoes")
 public class NotificacaoController {
 
     private NotificacaoService service;

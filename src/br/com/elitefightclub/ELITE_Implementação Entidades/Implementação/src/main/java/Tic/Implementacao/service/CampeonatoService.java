@@ -2,10 +2,12 @@ package Tic.Implementacao.service;
 
 import Tic.Implementacao.model.Campeonato;
 import Tic.Implementacao.repository.CampeonatoRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class CampeonatoService {
 
     private CampeonatoRepository repo;

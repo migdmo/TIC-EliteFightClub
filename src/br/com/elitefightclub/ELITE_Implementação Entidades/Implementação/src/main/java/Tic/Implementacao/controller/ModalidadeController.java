@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/Modalidade")
+@RequestMapping("/modalidades")
 public class ModalidadeController {
 
     private final ModalidadeService service;

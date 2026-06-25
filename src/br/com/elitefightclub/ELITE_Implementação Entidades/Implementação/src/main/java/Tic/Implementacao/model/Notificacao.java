@@ -10,7 +10,7 @@ import java.time.LocalTime;
 
 
 @Entity
-@Table(name = "notificação")
+@Table(name = "notificações")
 public class Notificacao    {
 
 

@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/Horario")
+@RequestMapping("/horarios")
 public class HorarioController {
 
     private final HorarioService service;
