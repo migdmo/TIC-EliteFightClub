@@ -3,7 +3,8 @@ package Tic.Implementacao.service;
 import Tic.Implementacao.model.Aluno;
 import Tic.Implementacao.repository.AlunoRepository;
 import org.springframework.stereotype.Service;
-import Tic.Implementacao.model.Aluno;
+import org.springframework.transaction.annotation.Transactional;
+
 import java.util.List;
 import java.util.Optional;
 
@@ -23,17 +24,17 @@ public class AlunoService {
     public void atualizarDados() {}
     @Override
     public String exibirIdentificacao() { return ""; }
-     */
+    */
 
     public List<Aluno> cadastrar(){
         return repo.findAll();
     }
 
-
     public Optional<Aluno> exibirIdentificacao(Long id){
         return repo.findById(id);
     }
 
+    @Transactional
     public boolean remove(Long id){
         if(repo.existsById(id)){
             repo.deleteById(id);
@@ -42,26 +43,18 @@ public class AlunoService {
         return false;
     }
 
+    @Transactional
     public Aluno atualizarDados(Long id, Aluno alterado){
-        if (repo.existsById(id)){
-
+        if(repo.existsById(id)){
             alterado.setId(id);
             return repo.save(alterado);
         }
-        return  null;
+        return null;
     }
 
-
-    public Aluno salva(Aluno aluno ){
+    @Transactional
+    public Aluno salva(Aluno aluno){
         return repo.save(aluno);
     }
-
-
-
-
-
-
-
-
 
 }
