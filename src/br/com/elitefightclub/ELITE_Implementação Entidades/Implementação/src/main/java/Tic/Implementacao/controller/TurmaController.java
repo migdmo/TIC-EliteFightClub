@@ -20,8 +20,8 @@ public class TurmaController {
     }
 
     @GetMapping
-    public ResponseEntity<List<Turma>> cadastrar(){
-        return ResponseEntity.ok(service.cadastrar());
+    public ResponseEntity<List<Turma>> listar(){
+        return ResponseEntity.ok(service.listar());
     }
 
     @GetMapping("/{id}")

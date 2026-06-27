@@ -1,9 +1,7 @@
 package Tic.Implementacao.controller;
 
-import Tic.Implementacao.model.Aluno;
 import Tic.Implementacao.model.Professor;
 import Tic.Implementacao.service.ProfessorService;
-import org.apache.coyote.Response;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -25,8 +23,8 @@ public class ProfessorController {
 
     //GET
     @GetMapping
-    public ResponseEntity<List<Professor>> cadastrar(){
-        return ResponseEntity.ok(service.cadastrar());
+    public ResponseEntity<List<Professor>> listar(){
+        return ResponseEntity.ok(service.listar());
     }
 
     @GetMapping("/{id}")

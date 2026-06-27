@@ -1,6 +1,5 @@
 package Tic.Implementacao.service;
 
-import Tic.Implementacao.model.Aluno;
 import Tic.Implementacao.model.Professor;
 import Tic.Implementacao.repository.ProfessorRepository;
 import org.springframework.stereotype.Service;
@@ -17,7 +16,7 @@ public class ProfessorService {
         this.repo = repo;
     }
 
-    public List<Professor> cadastrar(){
+    public List<Professor> listar(){
         return repo.findAll();
     }
 
