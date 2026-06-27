@@ -26,7 +26,7 @@ public class AlunoService {
     public String exibirIdentificacao() { return ""; }
     */
 
-    public List<Aluno> cadastrar(){
+    public List<Aluno> listar(){
         return repo.findAll();
     }
 

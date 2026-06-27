@@ -17,7 +17,7 @@ public class CampeonatoService {
         this.repo = repo;
     }
 
-    public List<Campeonato> cadastrar() {
+    public List<Campeonato> listar() {
         return repo.findAll();
     }
 
