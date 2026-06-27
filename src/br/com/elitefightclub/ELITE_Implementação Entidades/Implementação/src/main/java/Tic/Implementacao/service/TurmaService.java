@@ -3,6 +3,7 @@ package Tic.Implementacao.service;
 import Tic.Implementacao.model.Turma;
 import Tic.Implementacao.repository.TurmaRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
@@ -24,6 +25,7 @@ public class TurmaService {
         return repo.findById(id);
     }
 
+    @Transactional
     public boolean remove(Long id){
         if(repo.existsById(id)){
             repo.deleteById(id);
@@ -32,6 +34,7 @@ public class TurmaService {
         return false;
     }
 
+    @Transactional
     public Turma atualizarDados(Long id, Turma alterado){
         if(repo.existsById(id)){
             alterado.setId(id);
@@ -40,6 +43,7 @@ public class TurmaService {
         return null;
     }
 
+    @Transactional
     public Turma salva(Turma turma){
         return repo.save(turma);
     }

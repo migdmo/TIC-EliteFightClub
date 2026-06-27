@@ -1,9 +1,9 @@
 package Tic.Implementacao.service;
 
-import Tic.Implementacao.model.Aluno;
 import Tic.Implementacao.model.Professor;
 import Tic.Implementacao.repository.ProfessorRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
@@ -25,6 +25,7 @@ public class ProfessorService {
         return repo.findById(id);
     }
 
+    @Transactional
     public boolean remove(Long id){
         if(repo.existsById(id)){
             repo.deleteById(id);
@@ -33,20 +34,17 @@ public class ProfessorService {
         return false;
     }
 
+    @Transactional
     public Professor atualizarDados(Long id, Professor alterado){
         if (repo.existsById(id)){
-
             alterado.setId(id);
             return repo.save(alterado);
         }
-        return  null;
+        return null;
     }
 
-
-    public Professor salva(Professor professor ){
+    @Transactional
+    public Professor salva(Professor professor){
         return repo.save(professor);
-
     }
-
-
 }

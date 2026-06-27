@@ -3,6 +3,7 @@ package Tic.Implementacao.service;
 import Tic.Implementacao.model.Horario;
 import Tic.Implementacao.repository.HorarioRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
@@ -24,10 +25,12 @@ public class HorarioService {
         return repository.findById(id);
     }
 
+    @Transactional
     public Horario salvar(Horario horario) {
         return repository.save(horario);
     }
 
+    @Transactional
     public Horario atualizar(Long id, Horario dadosNovos) {
 
         Horario horario = repository.findById(id)
@@ -43,6 +46,7 @@ public class HorarioService {
         return repository.save(horario);
     }
 
+    @Transactional
     public boolean remover(Long id) {
 
         if (repository.existsById(id)) {

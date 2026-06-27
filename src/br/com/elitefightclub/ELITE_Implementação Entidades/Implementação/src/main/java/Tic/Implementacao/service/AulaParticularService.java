@@ -3,6 +3,7 @@ package Tic.Implementacao.service;
 import Tic.Implementacao.model.AulaParticular;
 import Tic.Implementacao.repository.AulaParticularRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
@@ -24,10 +25,12 @@ public class AulaParticularService {
         return repository.findById(id);
     }
 
+    @Transactional
     public AulaParticular salvar(AulaParticular aulaParticular) {
         return repository.save(aulaParticular);
     }
 
+    @Transactional
     public AulaParticular atualizar(Long id, AulaParticular dadosNovos) {
 
         AulaParticular aula = repository.findById(id)
@@ -42,6 +45,7 @@ public class AulaParticularService {
         return repository.save(aula);
     }
 
+    @Transactional
     public boolean remover(Long id) {
 
         if (repository.existsById(id)) {
