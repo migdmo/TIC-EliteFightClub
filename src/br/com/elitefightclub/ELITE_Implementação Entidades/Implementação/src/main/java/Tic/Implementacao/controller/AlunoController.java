@@ -21,8 +21,8 @@ public class AlunoController {
 
     //GET
     @GetMapping
-    public ResponseEntity<List<Aluno>> cadastrar(){
-        return ResponseEntity.ok(service.cadastrar());
+    public ResponseEntity<List<Aluno>> listar(){
+        return ResponseEntity.ok(service.listar());
     }
 
     //GET ID

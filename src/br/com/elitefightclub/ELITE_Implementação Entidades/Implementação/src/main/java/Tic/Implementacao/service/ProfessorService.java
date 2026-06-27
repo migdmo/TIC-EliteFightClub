@@ -17,7 +17,7 @@ public class ProfessorService {
         this.repo = repo;
     }
 
-    public List<Professor> cadastrar(){
+    public List<Professor> listar(){
         return repo.findAll();
     }
 

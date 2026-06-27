@@ -17,7 +17,7 @@ public class TurmaService {
         this.repo = repo;
     }
 
-    public List<Turma> cadastrar(){
+    public List<Turma> listar(){
         return repo.findAll();
     }
 

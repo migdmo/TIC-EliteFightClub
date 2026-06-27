@@ -22,8 +22,8 @@ public class CampeonatoController {
     }
 
     @GetMapping
-    public ResponseEntity<List<Campeonato>> cadastrar(){
-        return ResponseEntity.ok(service.cadastrar());
+    public ResponseEntity<List<Campeonato>> listar(){
+        return ResponseEntity.ok(service.listar());
     }
 
     @GetMapping("/{id}")
